@@ -2,7 +2,7 @@ services:
   - type: web
     name: password-web-app
     env: python
+    plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python app.py"
-    plan: free
     autoDeploy: true
